@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bharatmuntha27/bgsspa-software.git/static/css/main.cb5cbecd.css",
-    "main.js": "/bharatmuntha27/bgsspa-software.git/static/js/main.4f7d19dd.js",
+    "main.js": "/bharatmuntha27/bgsspa-software.git/static/js/main.73ce563e.js",
     "static/js/453.9f83b693.chunk.js": "/bharatmuntha27/bgsspa-software.git/static/js/453.9f83b693.chunk.js",
     "index.html": "/bharatmuntha27/bgsspa-software.git/index.html",
     "main.cb5cbecd.css.map": "/bharatmuntha27/bgsspa-software.git/static/css/main.cb5cbecd.css.map",
-    "main.4f7d19dd.js.map": "/bharatmuntha27/bgsspa-software.git/static/js/main.4f7d19dd.js.map",
+    "main.73ce563e.js.map": "/bharatmuntha27/bgsspa-software.git/static/js/main.73ce563e.js.map",
     "453.9f83b693.chunk.js.map": "/bharatmuntha27/bgsspa-software.git/static/js/453.9f83b693.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb5cbecd.css",
-    "static/js/main.4f7d19dd.js"
+    "static/js/main.73ce563e.js"
   ]
 }
