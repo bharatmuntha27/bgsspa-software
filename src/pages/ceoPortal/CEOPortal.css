@@ -1,0 +1,178 @@
+.ceo-portal {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.ceo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.ceo-header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.ceo-header p {
+  color: #cbd5e1;
+}
+
+.ceo-logout-btn {
+  border: none;
+  padding: 14px 24px;
+  border-radius: 14px;
+  background: #ef4444;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.ceo-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.ceo-stat-card,
+.ceo-card,
+.ceo-table-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 24px;
+}
+
+.ceo-stat-card {
+  padding: 25px;
+}
+
+.ceo-stat-card h3 {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.ceo-stat-card h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.ceo-stat-card span {
+  color: #4ade80;
+  font-weight: 700;
+}
+
+.ceo-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.ceo-card {
+  padding: 28px;
+}
+
+.ceo-card h2,
+.ceo-table-card h2 {
+  margin-bottom: 22px;
+}
+
+.ceo-progress-item {
+  margin-bottom: 22px;
+}
+
+.ceo-progress-item > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ceo-progress-item span {
+  color: #cbd5e1;
+}
+
+.ceo-progress-item strong {
+  color: #67e8f9;
+}
+
+.ceo-progress-line {
+  height: 11px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  overflow: hidden;
+}
+
+.ceo-progress-line div {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00d4ff, #7c3aed);
+}
+
+.ceo-service-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 14px;
+}
+
+.ceo-service-box span {
+  color: #cbd5e1;
+}
+
+.ceo-service-box strong {
+  color: #67e8f9;
+}
+
+.ceo-table-card {
+  padding: 28px;
+  overflow-x: auto;
+}
+
+.ceo-status {
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ceo-status.active {
+  background: rgba(34,197,94,0.18);
+  color: #4ade80;
+}
+
+.ceo-status.review {
+  background: rgba(245,158,11,0.18);
+  color: #fbbf24;
+}
+
+@media (max-width: 900px) {
+  .ceo-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .ceo-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ceo-header h1 {
+    font-size: 32px;
+  }
+
+  .ceo-logout-btn {
+    width: 100%;
+  }
+
+  table {
+    min-width: 850px;
+  }
+}

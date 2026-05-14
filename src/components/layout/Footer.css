@@ -1,0 +1,141 @@
+.spa-footer {
+  margin-top: 120px;
+  padding: 60px 30px 70px;
+  color: #374151;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.spa-footer::before,
+.spa-footer::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(176, 122, 35, 0.08);
+  filter: blur(40px);
+}
+
+.spa-footer::before {
+  top: -80px;
+  left: 80px;
+}
+
+.spa-footer::after {
+  right: -60px;
+  bottom: -60px;
+}
+
+.footer-top-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-top-line span {
+  width: 150px;
+  height: 1px;
+  background: rgba(176, 122, 35, 0.45);
+}
+
+.footer-top-line p {
+  font-weight: 700;
+  color: #444;
+}
+
+.spa-footer h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 22px;
+  color: #d0d7e0;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-desc {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #e0d4d4;
+  position: relative;
+  z-index: 2;
+}
+
+.city-grid {
+  max-width: 760px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 42px 34px;
+  position: relative;
+  z-index: 2;
+}
+
+.city-card {
+  text-align: center;
+}
+
+.city-icon {
+  font-size: 42px;
+  color: #d6ac6d;
+  filter: sepia(1);
+  margin-bottom: 10px;
+}
+
+.city-card p {
+  font-size: 14px;
+  color: #d4d0d0;
+}
+
+.scroll-top-btn {
+  position: absolute;
+  left: 18px;
+  bottom: 55px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: #a0740f;
+  color: #111827;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  z-index: 3;
+}
+
+@media (max-width: 1000px) {
+  .city-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-top-line span {
+    width: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .spa-footer h2 {
+    font-size: 30px;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .footer-top-line span {
+    width: 45px;
+  }
+
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+  }
+}

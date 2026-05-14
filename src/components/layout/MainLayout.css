@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+/* Floating Background Shapes */
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.25;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background: #ff4ecd;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 400px;
+  height: 400px;
+  background: #00d4ff;
+  bottom: -150px;
+  right: -100px;
+}
+
+.shape3 {
+  width: 250px;
+  height: 250px;
+  background: #7c3aed;
+  top: 40%;
+  left: 40%;
+}
+
+.page-content {
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-content {
+  margin-left: 260px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    margin-left: 0;
+  }
+}
+
+.main-layout.dark {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: white;
+}
+
+.main-layout.light {
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+  color: #020617;
+}
+
+.main-layout.light .navbar,
+.main-layout.light .sidebar,
+.main-layout.light .welcome-card,
+.main-layout.light .dashboard-card,
+.main-layout.light .booking-card,
+.main-layout.light .schedule-card,
+.main-layout.light .service-card,
+.main-layout.light .service-stat-card,
+.main-layout.light .customers-table-card,
+.main-layout.light .stat-box,
+.main-layout.light .billing-stat-card,
+.main-layout.light .invoice-card,
+.main-layout.light .report-stat-card,
+.main-layout.light .chart-card,
+.main-layout.light .report-table-card,
+.main-layout.light .employee-stat-card,
+.main-layout.light .employee-card {
+  background: rgba(255, 255, 255, 0.75);
+  color: #020617;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.main-layout.light p,
+.main-layout.light span,
+.main-layout.light label,
+.main-layout.light th,
+.main-layout.light td,
+.main-layout.light .nav-links a,
+.main-layout.light .sidebar-menu a {
+  color: #334155;
+}
+
+.main-layout.light input,
+.main-layout.light select,
+.main-layout.light textarea {
+  background: rgba(15, 23, 42, 0.08);
+  color: #020617;
+}
+
+.main-layout.light input::placeholder,
+.main-layout.light textarea::placeholder {
+  color: #64748b;
+}
+
+.main-layout.light .analytics-card {
+  background: rgba(255, 255, 255, 0.75);
+  color: #020617;
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .shape1 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .shape2 {
+    width: 260px;
+    height: 260px;
+  }
+
+  .shape3 {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-content {
+    padding: 15px;
+  }
+}
